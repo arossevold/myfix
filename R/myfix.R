@@ -11,7 +11,7 @@
 #'   str <- gsub('"', "", str)
 #'   str <- normalizePath(str, winslash = "/")
 #'   str <- charToRaw(paste0(str, " "))
-#'   writeClipboard(str)
+#'   writeClipboard(str, format = 1)
 #' }
 #' ```
 #' @examples
@@ -22,7 +22,7 @@ myfix <- function() {
   str <- gsub('"', "", str)
   str <- normalizePath(str, winslash = "/")
   str <- charToRaw(paste0(str, " "))
-  writeClipboard(str)
+  writeClipboard(str, format = 1)
 }
 
 
@@ -39,7 +39,7 @@ myfix <- function() {
 #'   str <- gsub('"', "", str)
 #'   str <- normalizePath(str, winslash = "/")
 #'   str <- charToRaw(paste0(str, " "))
-#'   writeClipboard(str)
+#'   writeClipboard(str, format = 1)
 #' }
 #' ```
 #' @examples
@@ -50,7 +50,7 @@ mf <- function() {
   str <- gsub('"', "", str)
   str <- normalizePath(str, winslash = "/")
   str <- charToRaw(paste0(str, " "))
-  writeClipboard(str)
+  writeClipboard(str, format = 1)
 }
 
 
@@ -62,7 +62,7 @@ mf <- function() {
 #' @return A list of data sheets with simplified variable names
 #' @details List of changes:
 #' ```
-#' 
+#'
 #' vrn <- function(x) {
 #'  sapply(x, function(y){
 #'  if("SubjectId" %in% names(y))
@@ -94,7 +94,7 @@ vrn <- function(x) {
 #' Create a color palette for PAM50
 #' @export
 #' @return A vector of four colors, representing Luminal A, Luminal B, HER2-enriched and Basal-like breast cancer.
-#' @details 
+#' @details
 #' ```
 #' Colors: c("blue", "deepskyblue", "magenta", "red")
 #' ```
@@ -113,7 +113,7 @@ pamcol <- function(){
 #'
 #' Loads the packages I use every day: tidvyerse, myfix, survival, survminer, readxl, ggsci, and broom
 #' @export
-#' @details 
+#' @details
 #' ```
 #' ```
 #' @examples
